@@ -2571,6 +2571,80 @@ input[type='checkbox'] {
   color: var(--color-brand-rose);
 }
 
+/* ── Manifest Movement: Global Buttons ── */
+
+.button,
+button[type="submit"],
+.shopify-challenge__button {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: var(--radius-pill);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button--primary,
+.button:not(.button--secondary):not(.button--tertiary) {
+  background-color: var(--color-brand-plum);
+  color: #fff;
+  border: none;
+}
+
+.button--primary:hover,
+.button:not(.button--secondary):not(.button--tertiary):hover {
+  background-color: var(--color-brand-navy);
+  color: #fff;
+}
+
+.button--secondary {
+  background: transparent;
+  border: 2px solid var(--color-brand-plum);
+  color: var(--color-brand-plum);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-brand-plum);
+  color: #fff;
+}
+
+/* Add to Cart specific */
+.product-form__submit,
+.cart__submit-button {
+  background-color: var(--color-brand-rose);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+}
+
+.product-form__submit:hover,
+.cart__submit-button:hover {
+  background-color: var(--color-brand-plum);
+  color: #fff;
+}
+
+/* ── Manifest Movement: Global Typography ── */
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brand-navy);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5 {
+  font-family: var(--font-heading);
+  color: var(--color-brand-navy);
+}
+
+a {
+  color: var(--color-brand-plum);
+}
+
+a:hover {
+  color: var(--color-brand-rose);
+}
+
 /* ── Manifest Movement: Footer ── */
 
 /* Dark navy background */
