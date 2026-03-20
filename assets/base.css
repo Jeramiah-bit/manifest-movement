@@ -2571,6 +2571,127 @@ input[type='checkbox'] {
   color: var(--color-brand-rose);
 }
 
+/* ── Manifest Movement: Footer ── */
+
+/* Dark navy background */
+.footer {
+  background-color: var(--color-brand-navy) !important;
+  margin-top: 0;
+}
+
+.footer .color-scheme-1 {
+  background-color: var(--color-brand-navy);
+}
+
+/* Affirmation quote above footer columns */
+.footer::before {
+  content: "\2726  You are already everything you are becoming  \2726";
+  display: block;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-brand-offwhite);
+  padding: 4.8rem 2rem 3.2rem;
+  line-height: 1.3;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 749px) {
+  .footer::before {
+    font-size: 2rem;
+    padding: 3.2rem 1.6rem 2.4rem;
+  }
+}
+
+/* Column headings */
+.footer-block__heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--color-brand-offwhite);
+}
+
+/* Footer links */
+.footer-block .list-menu__item--link {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: var(--color-brand-lavender);
+}
+
+.footer-block .list-menu__item--link:hover {
+  color: var(--color-brand-rose);
+}
+
+/* Footer text blocks */
+.footer-block__details-content.rte,
+.footer-block__details-content.rte p {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: var(--color-brand-lavender);
+  line-height: 1.6;
+}
+
+/* Newsletter section */
+.footer-block__newsletter .footer-block__heading {
+  color: var(--color-brand-offwhite);
+}
+
+.footer__newsletter .field__input {
+  background-color: transparent;
+  border-color: var(--color-brand-lavender);
+  color: var(--color-brand-offwhite);
+  font-family: var(--font-body);
+  border-radius: var(--radius-pill);
+}
+
+.footer__newsletter .field__input::placeholder {
+  color: var(--color-brand-lavender);
+  opacity: 0.7;
+}
+
+.footer__newsletter .newsletter-form__button {
+  color: var(--color-brand-rose);
+}
+
+.footer__newsletter .newsletter-form__button:hover {
+  color: var(--color-brand-offwhite);
+}
+
+/* Social icons */
+.footer__list-social .social-icons__link {
+  color: var(--color-brand-offwhite);
+}
+
+.footer__list-social .social-icons__link:hover {
+  color: var(--color-brand-rose);
+}
+
+/* Bottom bar (copyright, payment icons) */
+.footer__content-bottom {
+  border-top: 1px solid rgba(232, 221, 240, 0.15);
+}
+
+.footer__copyright,
+.footer__content-bottom .copyright__content,
+.footer__content-bottom a {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--color-brand-lavender);
+  opacity: 0.6;
+}
+
+.footer__content-bottom a:hover {
+  color: var(--color-brand-rose);
+  opacity: 1;
+}
+
+/* Payment icons */
+.footer__payment .list-payment__item svg {
+  opacity: 0.6;
+}
+
 .announcement-bar__message {
   text-align: center;
   padding: 1rem 0;
