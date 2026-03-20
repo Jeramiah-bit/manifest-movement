@@ -2304,11 +2304,11 @@ input[type='checkbox'] {
   color: var(--color-brand-plum);
 }
 
-.header__heading-logo-wrapper--svg {
-  width: 160px;
+.header__heading-logo-wrapper--brand {
+  width: 220px;
 }
 
-.header__heading-logo-wrapper--svg .header__heading-logo {
+.header__heading-logo-wrapper--brand .header__heading-logo {
   width: 100%;
   height: auto;
 }
