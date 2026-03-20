@@ -117,7 +117,7 @@
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "columns_mobile": "2",
         "padding_top": 28,
         "padding_bottom": 40
@@ -252,7 +252,7 @@
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "columns_mobile": "2",
         "padding_top": 40,
         "padding_bottom": 40
