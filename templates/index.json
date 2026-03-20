@@ -50,25 +50,25 @@
       "type": "collection-list",
       "blocks": {
         "collection-1": {
-          "type": "collection",
+          "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
         "collection-2": {
-          "type": "collection",
+          "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
         "collection-3": {
-          "type": "collection",
+          "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
         "collection-4": {
-          "type": "collection",
+          "type": "featured_collection",
           "settings": {
             "collection": ""
           }
