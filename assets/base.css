@@ -2470,6 +2470,107 @@ input[type='checkbox'] {
   }
 }
 
+/* ── Manifest Movement: Collection List ── */
+
+.collection-list__item .card__content {
+  padding: 1.6rem;
+}
+
+.collection-list__item .card__heading a {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-brand-navy);
+  text-decoration: none;
+}
+
+.collection-list__item .card__heading a:hover {
+  color: var(--color-brand-plum);
+}
+
+.collection-list__item .card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.collection-list__item .card:hover {
+  box-shadow: 0 8px 32px rgba(107, 61, 122, 0.12);
+}
+
+.collection-list__item .card__media .media img {
+  transition: transform 0.3s ease;
+}
+
+.collection-list__item .card:hover .card__media .media img {
+  transform: scale(1.03);
+}
+
+/* ── Manifest Movement: Affirmation Quote ── */
+
+.section-rich-text .rich-text__heading {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-brand-plum);
+  line-height: 1.2;
+}
+
+.section-rich-text .rich-text__text p {
+  font-family: var(--font-body);
+  font-size: 1.8rem;
+  color: var(--color-brand-navy);
+  opacity: 0.75;
+  max-width: 60ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Manifest Movement: Values Multicolumn ── */
+
+.multicolumn .multicolumn-card__info .h3,
+.multicolumn .multicolumn-card__info h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand-navy);
+  font-size: 2rem;
+}
+
+.multicolumn .multicolumn-card__info .rte p {
+  font-family: var(--font-body);
+  color: var(--color-brand-navy);
+  opacity: 0.75;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.multicolumn .title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand-navy);
+}
+
+/* ── Manifest Movement: Section Headings ── */
+
+.section-header h2,
+.collection-list-title,
+.title-wrapper .title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand-navy);
+}
+
+.view-all a,
+.title-wrapper .link {
+  font-family: var(--font-body);
+  color: var(--color-brand-plum);
+  font-weight: 500;
+}
+
+.view-all a:hover,
+.title-wrapper .link:hover {
+  color: var(--color-brand-rose);
+}
+
 .announcement-bar__message {
   text-align: center;
   padding: 1rem 0;

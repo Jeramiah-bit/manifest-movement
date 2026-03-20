@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop the Collection",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "What is Manifest Movement? →",
             "button_link_2": "",
@@ -46,55 +46,75 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "collection_list": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "collection-1": {
+          "type": "collection",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "collection": ""
           }
         },
-        "text": {
-          "type": "text",
+        "collection-2": {
+          "type": "collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "collection": ""
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "collection-4"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
+        "title": "Shop by Category",
         "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
+        "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 28
+      }
+    },
+    "new_arrivals": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "heading_size": "h2",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "view_all_style": "link",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 28,
-        "padding_bottom": 36
+        "padding_bottom": 40
       }
     },
-    "collage": {
+    "lifestyle_collage": {
       "type": "collage",
       "blocks": {
         "collection-0": {
@@ -123,36 +143,120 @@
         "collection-1"
       ],
       "settings": {
-        "heading": "Multimedia collage",
+        "heading": "Move With Intention",
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "video": {
-      "type": "video",
+    "affirmation_quote": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "✦ You are already everything you are becoming ✦",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every pair carries a whispered intention — a reminder that your movement is your meditation.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
-    "multicolumn": {
+    "featured_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Affirmation Collection",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Grip socks designed for yoga, pilates, and barre — with intentions woven into every step.",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestsellers",
+        "heading_size": "h2",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "view_all_style": "link",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "values": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Intention in Every Stitch",
+            "text": "<p>Each pair is designed with affirmations woven into the fabric — a quiet reminder to move with purpose.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -160,8 +264,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Performance Meets Spirit",
+            "text": "<p>Non-slip grip soles, arch support, and breathable materials built for yoga, pilates, barre, and beyond.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -169,8 +273,8 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "For Women Who Move",
+            "text": "<p>Manifest Movement is a community of women who believe that every step, stretch, and breath is sacred.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -182,29 +286,31 @@
         "column3"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
+        "title": "Why Manifest Movement",
+        "heading_size": "h2",
+        "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "collection_list",
+    "new_arrivals",
+    "lifestyle_collage",
+    "affirmation_quote",
+    "featured_banner",
+    "bestsellers",
+    "values"
   ]
 }
