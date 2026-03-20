@@ -1,4 +1,21 @@
 :root {
+  /* ── Manifest Movement Brand Tokens ── */
+  --color-brand-plum:      #6B3D7A;
+  --color-brand-blush:     #F5EEF2;
+  --color-brand-rose:      #C4728A;
+  --color-brand-navy:      #2D1B4E;
+  --color-brand-lavender:  #E8DDF0;
+  --color-brand-offwhite:  #FDFBFF;
+  --color-brand-gold:      #C9A84C;
+
+  --font-heading:  'Cormorant Garamond', 'Georgia', serif;
+  --font-body:     'DM Sans', 'Helvetica Neue', sans-serif;
+
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   24px;
+  --radius-pill: 40px;
+
   --alpha-button-background: 1;
   --alpha-button-border: 1;
   --alpha-link: 0.85;
@@ -2242,6 +2259,208 @@ input[type='checkbox'] {
   margin-left: 0.8rem;
   vertical-align: middle;
   margin-bottom: 0.2rem;
+}
+
+/* ── Manifest Movement: Announcement Bar ── */
+.announcement-bar-section,
+.announcement-bar-section .utility-bar {
+  background-color: var(--color-brand-plum);
+  background: var(--color-brand-plum);
+}
+
+.announcement-bar-section .announcement-bar__message,
+.announcement-bar-section .announcement-bar__link,
+.announcement-bar-section .announcement-bar,
+.announcement-bar-section .announcement-bar__announcement {
+  color: var(--color-brand-offwhite);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+}
+
+.announcement-bar-section .slider-button .svg-wrapper {
+  color: var(--color-brand-offwhite);
+}
+
+/* ── Manifest Movement: Header ── */
+.section-header .header-wrapper {
+  background-color: var(--color-brand-offwhite);
+  border-bottom: 1px solid var(--color-brand-lavender);
+}
+
+.section-header .header__menu-item {
+  color: var(--color-brand-navy);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section-header .header__menu-item:hover {
+  color: var(--color-brand-plum);
+}
+
+.section-header .header__icon {
+  color: var(--color-brand-plum);
+}
+
+.header__heading-logo-wrapper--svg {
+  width: 160px;
+}
+
+.header__heading-logo-wrapper--svg .header__heading-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* ── Manifest Movement: Image Banner ── */
+
+/* Overlay: brand navy instead of black */
+.banner::after,
+.banner .banner__media::after {
+  background: var(--color-brand-navy);
+}
+
+/* Heading */
+.banner__heading {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 750px) {
+  .banner__heading {
+    font-size: 6.4rem;
+  }
+}
+
+/* Subheading */
+.banner__text p {
+  font-family: var(--font-body);
+  font-size: 1.8rem;
+  color: #fff;
+  opacity: 0.85;
+}
+
+/* Primary CTA button */
+.banner__buttons .button--primary {
+  background-color: var(--color-brand-rose);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 1.4rem 3.6rem;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.banner__buttons .button--primary:hover {
+  background-color: var(--color-brand-plum);
+  color: #fff;
+}
+
+/* Secondary ghost link */
+.banner__buttons .button--secondary {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.banner__buttons .button--secondary:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ── Manifest Movement: Product Card ── */
+
+/* Card container */
+.card-wrapper {
+  background-color: var(--color-brand-offwhite);
+  border: 0.5px solid var(--color-brand-lavender);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-wrapper:hover {
+  border-color: var(--color-brand-rose);
+  box-shadow: 0 8px 32px rgba(107, 61, 122, 0.14);
+}
+
+/* Image hover scale */
+.card__media .media img {
+  transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover .card__media .media img {
+  transform: scale(1.03);
+}
+
+/* Product title */
+.card__heading a {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-brand-navy);
+}
+
+/* Affirmation subtitle */
+.card__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-brand-plum);
+  margin: 0.2rem 0 0.6rem;
+}
+
+/* Price */
+.card-information .price-item {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-brand-plum);
+}
+
+/* Quick-add button: hidden by default, shown on hover */
+.card-wrapper .quick-add {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-wrapper:hover .quick-add {
+  opacity: 1;
+}
+
+.card-wrapper .quick-add__submit {
+  background-color: var(--color-brand-rose);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2.4rem;
+}
+
+.card-wrapper .quick-add__submit:hover {
+  background-color: var(--color-brand-plum);
+  color: #fff;
+}
+
+/* Mobile: always show quick-add since no hover */
+@media screen and (max-width: 749px) {
+  .card-wrapper .quick-add {
+    opacity: 1;
+  }
 }
 
 .announcement-bar__message {

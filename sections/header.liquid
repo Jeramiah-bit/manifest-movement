@@ -160,7 +160,9 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <div class="header__heading-logo-wrapper header__heading-logo-wrapper--svg">
+                <img src="{{ 'manifest-movement-logo.svg' | asset_url }}" alt="{{ shop.name }}" class="header__heading-logo" width="160" height="80" loading="eager">
+              </div>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -200,7 +202,9 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <div class="header__heading-logo-wrapper header__heading-logo-wrapper--svg">
+                <img src="{{ 'manifest-movement-logo.svg' | asset_url }}" alt="{{ shop.name }}" class="header__heading-logo" width="160" height="80" loading="eager">
+              </div>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}

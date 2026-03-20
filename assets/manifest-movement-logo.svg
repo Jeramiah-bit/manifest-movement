@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&amp;display=swap');
+    .logo-text {
+      font-family: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+      font-weight: 700;
+      font-size: 96px;
+      fill: #6B3D7A;
+      letter-spacing: -0.02em;
+    }
+  </style>
+  <text class="logo-text" x="300" y="135" text-anchor="middle">manifest</text>
+  <text class="logo-text" x="300" y="240" text-anchor="middle">movement</text>
+</svg>
