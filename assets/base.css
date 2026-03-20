@@ -8,8 +8,8 @@
   --color-brand-offwhite:  #FDFBFF;
   --color-brand-gold:      #C9A84C;
 
-  --font-heading:  'Cormorant Garamond', 'Georgia', serif;
-  --font-body:     'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-heading:  'Instrument Sans', 'Helvetica Neue', sans-serif;
+  --font-body:     'Instrument Sans', 'Helvetica Neue', sans-serif;
 
   --radius-sm:   6px;
   --radius-md:   12px;
@@ -2274,8 +2274,8 @@ input[type='checkbox'] {
 .announcement-bar-section .announcement-bar__announcement {
   color: var(--color-brand-offwhite);
   font-family: var(--font-heading);
-  font-style: italic;
   font-size: 1.4rem;
+  font-weight: 500;
   letter-spacing: 0.08em;
 }
 
@@ -2331,7 +2331,7 @@ input[type='checkbox'] {
 /* Heading */
 .banner__heading {
   font-family: var(--font-heading);
-  font-style: italic;
+  font-weight: 700;
   font-size: 4rem;
   line-height: 1.1;
 }
@@ -2510,7 +2510,7 @@ input[type='checkbox'] {
 
 .section-rich-text .rich-text__heading {
   font-family: var(--font-heading);
-  font-style: italic;
+  font-weight: 600;
   color: var(--color-brand-plum);
   line-height: 1.2;
 }
