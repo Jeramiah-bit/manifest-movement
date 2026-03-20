@@ -2305,12 +2305,19 @@ input[type='checkbox'] {
 }
 
 .header__heading-logo-wrapper--brand {
-  width: 220px;
+  width: 140px;
 }
 
 .header__heading-logo-wrapper--brand .header__heading-logo {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 749px) {
+  .header__heading-logo-wrapper--brand {
+    width: 120px;
+  }
 }
 
 /* ── Manifest Movement: Image Banner ── */
