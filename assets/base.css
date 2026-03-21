@@ -2330,7 +2330,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-logo-wrapper--brand {
-  width: 105px;
+  width: 80px;
 }
 
 .header__heading-logo-wrapper--brand .header__heading-logo {
@@ -2341,7 +2341,7 @@ input[type='checkbox'] {
 
 @media screen and (max-width: 749px) {
   .header__heading-logo-wrapper--brand {
-    width: 90px;
+    width: 65px;
   }
 }
 
