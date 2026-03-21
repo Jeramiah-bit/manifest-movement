@@ -2376,23 +2376,23 @@ input[type='checkbox'] {
   opacity: 0.85;
 }
 
-/* Primary CTA button */
+/* Primary CTA button — outlined like Move Active */
 .banner__buttons .button--primary {
-  background-color: var(--color-brand-rose);
+  background-color: transparent;
   color: #fff;
-  border: none;
+  border: 1.5px solid #fff;
   border-radius: var(--radius-pill);
   padding: 1.4rem 3.6rem;
   font-family: var(--font-body);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
 }
 
 .banner__buttons .button--primary:hover {
-  background-color: var(--color-brand-plum);
-  color: #fff;
+  background-color: #fff;
+  color: var(--color-brand-navy);
 }
 
 /* Secondary ghost link */
@@ -2415,35 +2415,36 @@ input[type='checkbox'] {
 
 /* ── Manifest Movement: Product Card ── */
 
-/* Card container */
+/* Card container — clean, minimal like Move Active */
 .card-wrapper {
-  background-color: var(--color-brand-offwhite);
-  border: 0.5px solid var(--color-brand-lavender);
+  background-color: transparent;
+  border: none;
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-wrapper:hover {
-  border-color: var(--color-brand-rose);
-  box-shadow: 0 8px 32px rgba(107, 61, 122, 0.14);
 }
 
 /* Image hover scale */
 .card__media .media img {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
+  border-radius: var(--radius-md);
 }
 
 .card-wrapper:hover .card__media .media img {
   transform: scale(1.03);
 }
 
-/* Product title */
+/* Product title — clean sans-serif */
 .card__heading a {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 500;
   color: var(--color-brand-navy);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.card__heading a:hover {
+  color: var(--color-brand-plum);
 }
 
 /* Affirmation subtitle */
@@ -2452,15 +2453,27 @@ input[type='checkbox'] {
   font-size: 1.2rem;
   font-style: italic;
   color: var(--color-brand-plum);
-  margin: 0.2rem 0 0.6rem;
+  margin: 0.2rem 0 0.4rem;
 }
 
-/* Price */
+/* Price — understated */
 .card-information .price-item {
   font-family: var(--font-body);
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--color-brand-plum);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-brand-navy);
+  opacity: 0.7;
+}
+
+/* Sale price */
+.card-information .price-item--sale {
+  color: var(--color-brand-rose);
+  opacity: 1;
+}
+
+.card-information .price-item--regular.price-item--last {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 /* Quick-add button: hidden by default, shown on hover */
@@ -2479,9 +2492,11 @@ input[type='checkbox'] {
   border: none;
   border-radius: var(--radius-pill);
   font-family: var(--font-body);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 1rem 2.4rem;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .card-wrapper .quick-add__submit:hover {
@@ -2496,40 +2511,90 @@ input[type='checkbox'] {
   }
 }
 
+/* Product card badges — pill-shaped */
+.card__badge .badge {
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 /* ── Manifest Movement: Collection List ── */
 
-.collection-list__item .card__content {
+/* Move Active style: overlay text on collection cards */
+.collection-list__item .card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.collection-list__item .card--media .card__inner .card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   padding: 1.6rem;
+}
+
+.collection-list__item .card--media .card__content:last-child {
+  display: none;
 }
 
 .collection-list__item .card__heading a {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  color: var(--color-brand-navy);
+  color: #fff;
   text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .collection-list__item .card__heading a:hover {
-  color: var(--color-brand-plum);
+  color: var(--color-brand-lavender);
 }
 
-.collection-list__item .card {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-
-.collection-list__item .card:hover {
-  box-shadow: 0 8px 32px rgba(107, 61, 122, 0.12);
+/* Darken bottom of card image for text readability */
+.collection-list__item .card--media .card__inner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
 
 .collection-list__item .card__media .media img {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .collection-list__item .card:hover .card__media .media img {
-  transform: scale(1.03);
+  transform: scale(1.05);
+}
+
+/* Hide arrow icon on collection cards */
+.collection-list__item .card__heading .icon-wrap {
+  display: none;
+}
+
+/* No border/shadow on collection cards — rely on image */
+.collection-list__item .card-wrapper {
+  border: none;
+  background: none;
+}
+
+/* Section heading centered, Move Active style */
+.collection-list-wrapper .title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-brand-navy);
 }
 
 /* ── Manifest Movement: Affirmation Quote ── */
@@ -2576,6 +2641,41 @@ input[type='checkbox'] {
 }
 
 /* ── Manifest Movement: Section Headings ── */
+
+/* Move Active style: clean centered section titles */
+.section-header .title,
+.featured-collection .title,
+.collection-list-wrapper .title,
+.multicolumn .title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-brand-navy);
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* "View all" / "Shop" buttons under product rows — outlined, Move Active style */
+.featured-collection .button--secondary,
+.featured-collection .button[class*="outline"],
+.collection-list-wrapper .button--secondary {
+  border: 1.5px solid var(--color-brand-navy);
+  color: var(--color-brand-navy);
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2.8rem;
+  border-radius: var(--radius-pill);
+}
+
+.featured-collection .button--secondary:hover,
+.featured-collection .button[class*="outline"]:hover,
+.collection-list-wrapper .button--secondary:hover {
+  background-color: var(--color-brand-navy);
+  color: #fff;
+}
 
 .section-header h2,
 .collection-list-title,
@@ -2712,19 +2812,39 @@ input[type='checkbox'] {
 
 /* ── Manifest Movement: Collection Page ── */
 
-/* Collection title */
-.collection-hero__title {
+/* Collection title — centered, clean */
+.collection-hero__title,
+.collection-banner__heading {
   font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
   color: var(--color-brand-navy);
+  text-align: center;
 }
 
-.collection-hero__description {
+.collection-hero__description,
+.collection-banner__description {
   font-family: var(--font-body);
+  font-size: 1.4rem;
   color: var(--color-brand-navy);
-  opacity: 0.85;
+  opacity: 0.7;
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
 }
 
-/* Filter and sort styling */
+/* Sidebar filters — Move Active style */
+.facets-vertical .facets__header {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-brand-navy);
+  border-bottom: 1px solid var(--color-brand-lavender);
+  padding-bottom: 1rem;
+}
+
 .facets__label,
 .facets__selected {
   font-family: var(--font-body);
@@ -2733,26 +2853,44 @@ input[type='checkbox'] {
 
 .facet-checkbox__text {
   font-family: var(--font-body);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  color: var(--color-brand-navy);
 }
 
-.facets__disclosure .disclosure__button {
+.facets__disclosure .disclosure__button,
+.facets-vertical .facets__summary {
   font-family: var(--font-body);
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--color-brand-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* Active filter pills */
 .active-facets__button {
   border-radius: var(--radius-pill);
   font-family: var(--font-body);
+  font-size: 1.2rem;
+  border-color: var(--color-brand-lavender);
 }
 
-/* Collection product count */
+.active-facets__button:hover {
+  border-color: var(--color-brand-rose);
+}
+
+/* Sort dropdown */
 .collection-product-count {
   font-family: var(--font-body);
+  font-size: 1.3rem;
   color: var(--color-brand-navy);
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.facet-filters__sort select {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--color-brand-navy);
 }
 
 /* ── Manifest Movement: Global Buttons ── */

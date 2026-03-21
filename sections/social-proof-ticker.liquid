@@ -1,0 +1,99 @@
+{{ 'component-social-proof-ticker.css' | asset_url | stylesheet_tag }}
+
+<div class="social-proof-ticker color-{{ section.settings.color_scheme }}">
+  <div class="social-proof-ticker__inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="social-proof-ticker__heading h2">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="social-proof-ticker__track" aria-label="Press and media mentions">
+      <div class="social-proof-ticker__scroll">
+        {%- for block in section.blocks -%}
+          <div class="social-proof-ticker__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.logo != blank -%}
+              <img
+                src="{{ block.settings.logo | image_url: width: 200 }}"
+                alt="{{ block.settings.alt_text | escape }}"
+                height="40"
+                width="auto"
+                loading="lazy"
+                class="social-proof-ticker__logo"
+              >
+            {%- else -%}
+              <span class="social-proof-ticker__text">{{ block.settings.alt_text }}</span>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+        {%- comment -%} Duplicate for seamless loop {%- endcomment -%}
+        {%- for block in section.blocks -%}
+          <div class="social-proof-ticker__item" aria-hidden="true">
+            {%- if block.settings.logo != blank -%}
+              <img
+                src="{{ block.settings.logo | image_url: width: 200 }}"
+                alt=""
+                height="40"
+                width="auto"
+                loading="lazy"
+                class="social-proof-ticker__logo"
+              >
+            {%- else -%}
+              <span class="social-proof-ticker__text">{{ block.settings.alt_text }}</span>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Social Proof Ticker",
+  "tag": "section",
+  "class": "section-social-proof",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "As Seen In",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Brand name",
+          "default": "Brand"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof Ticker",
+      "blocks": [
+        { "type": "logo", "settings": { "alt_text": "Refinery29" } },
+        { "type": "logo", "settings": { "alt_text": "Well+Good" } },
+        { "type": "logo", "settings": { "alt_text": "MindBodyGreen" } },
+        { "type": "logo", "settings": { "alt_text": "Shape" } },
+        { "type": "logo", "settings": { "alt_text": "Yoga Journal" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
