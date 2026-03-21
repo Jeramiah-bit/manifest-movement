@@ -2342,7 +2342,7 @@ input[type='checkbox'] {
 
 @media screen and (max-width: 749px) {
   .header__heading-logo-wrapper {
-    width: 90px !important;
+    width: 160px !important;
   }
 }
 
