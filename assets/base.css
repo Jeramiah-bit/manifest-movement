@@ -2312,8 +2312,9 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header--middle-left.page-width {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
   }
 
   .header--middle-left {
