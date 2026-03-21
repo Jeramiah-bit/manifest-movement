@@ -2304,6 +2304,12 @@ input[type='checkbox'] {
   color: var(--color-brand-plum);
 }
 
+.header--middle-left .header__heading,
+.header--middle-left .header__heading-link {
+  justify-self: start;
+  padding-left: 0;
+}
+
 .header__heading-logo-wrapper--brand {
   width: 130px;
 }
