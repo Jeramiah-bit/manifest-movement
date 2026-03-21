@@ -2329,19 +2329,19 @@ input[type='checkbox'] {
   }
 }
 
-.header__heading-logo-wrapper--brand {
-  width: 40px;
+.header__heading-logo-wrapper {
+  width: 40px !important;
 }
 
-.header__heading-logo-wrapper--brand .header__heading-logo {
+.header__heading-logo-wrapper .header__heading-logo {
   width: 100%;
   height: auto;
   display: block;
 }
 
 @media screen and (max-width: 749px) {
-  .header__heading-logo-wrapper--brand {
-    width: 65px;
+  .header__heading-logo-wrapper {
+    width: 35px !important;
   }
 }
 
