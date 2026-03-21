@@ -2597,6 +2597,164 @@ input[type='checkbox'] {
   color: var(--color-brand-rose);
 }
 
+/* ── Manifest Movement: Product Page ── */
+
+/* Product title */
+.product__title h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand-navy);
+}
+
+/* Price styling */
+.product__info-wrapper .price-item--regular,
+.product__info-wrapper .price-item--sale {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-brand-plum);
+}
+
+.product__info-wrapper .price-item--regular.price-item--last {
+  color: var(--color-brand-rose);
+}
+
+/* Variant picker buttons */
+.product__info-wrapper variant-selects .product-form__input label,
+.product__info-wrapper variant-radios .product-form__input label {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-brand-navy);
+}
+
+.product__info-wrapper fieldset .product-form__input input[type="radio"] + label {
+  border-color: var(--color-brand-lavender);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.product__info-wrapper fieldset .product-form__input input[type="radio"]:checked + label {
+  border-color: var(--color-brand-plum);
+  background-color: var(--color-brand-plum);
+  color: #fff;
+}
+
+.product__info-wrapper fieldset .product-form__input input[type="radio"] + label:hover {
+  border-color: var(--color-brand-rose);
+}
+
+/* Quantity selector */
+.product__info-wrapper .quantity__input {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-brand-navy);
+}
+
+.product__info-wrapper .quantity {
+  border-color: var(--color-brand-lavender);
+  border-radius: var(--radius-md);
+}
+
+/* Accordion / collapsible tabs */
+.product__accordion.accordion {
+  border-color: var(--color-brand-lavender);
+}
+
+.product__accordion .accordion__title {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-brand-navy);
+  letter-spacing: 0.02em;
+}
+
+.product__accordion .accordion__content {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: var(--color-brand-navy);
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.product__accordion .svg-wrapper {
+  fill: var(--color-brand-plum);
+}
+
+.product__accordion .icon-caret {
+  color: var(--color-brand-plum);
+}
+
+/* Product description */
+.product__description.rte,
+.product__description.rte p {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--color-brand-navy);
+}
+
+/* Related products heading */
+.related-products .related-products__heading {
+  font-family: var(--font-heading);
+  color: var(--color-brand-navy);
+}
+
+/* Trust badges multicolumn on product page */
+.product ~ .multicolumn .multicolumn-card__info .inline-richtext {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand-navy);
+}
+
+/* ── Manifest Movement: Collection Page ── */
+
+/* Collection title */
+.collection-hero__title {
+  font-family: var(--font-heading);
+  color: var(--color-brand-navy);
+}
+
+.collection-hero__description {
+  font-family: var(--font-body);
+  color: var(--color-brand-navy);
+  opacity: 0.85;
+}
+
+/* Filter and sort styling */
+.facets__label,
+.facets__selected {
+  font-family: var(--font-body);
+  color: var(--color-brand-navy);
+}
+
+.facet-checkbox__text {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+}
+
+.facets__disclosure .disclosure__button {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-brand-navy);
+}
+
+/* Active filter pills */
+.active-facets__button {
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+}
+
+/* Collection product count */
+.collection-product-count {
+  font-family: var(--font-body);
+  color: var(--color-brand-navy);
+  opacity: 0.6;
+}
+
 /* ── Manifest Movement: Global Buttons ── */
 
 .button,
@@ -2698,7 +2856,7 @@ a:hover {
 
 /* Affirmation quote above footer columns */
 .footer::before {
-  content: "\2726  You are already everything you are becoming  \2726";
+  content: "\2726  She didn\2019t just move her body \2014 she moved her whole life forward  \2726";
   display: block;
   text-align: center;
   font-family: var(--font-heading);

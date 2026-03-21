@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,7 +20,8 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -21,7 +31,8 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -30,7 +41,8 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -40,14 +52,15 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
+            "heading": "Materials & Fabric",
             "icon": "leather",
-            "content": "",
+            "content": "<p>70% combed cotton, 20% polyester, 8% nylon, 2% elastane. Breathable, moisture-wicking, and built to last through every session. Affirmations are jacquard-woven — not printed — so they never fade, peel, or wash away.</p>",
             "page": ""
           }
         },
@@ -56,16 +69,16 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p><strong>Shipping:</strong> Free standard shipping on orders $60+. Standard delivery 3–5 business days. Express 1–2 business days.</p><p><strong>Returns:</strong> 30-day returns on unworn items. Free size exchanges — because the right fit matters.</p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "Size Guide",
             "icon": "ruler",
-            "content": "",
+            "content": "<p><strong>S</strong> — US 5–7 (EU 35–38)<br><strong>M</strong> — US 7–9 (EU 38–41)<br><strong>L</strong> — US 9–12 (EU 41–44)</p><p>Not sure? Go up a size. Our socks have a slight compression fit for arch support.</p>",
             "page": ""
           }
         },
@@ -74,7 +87,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<p>Machine wash cold, inside out. Tumble dry low or air dry. Do not bleach or iron directly on the affirmation. Your socks will last longer when you treat them with the same intention you bring to your practice.</p>",
             "page": ""
           }
         },
@@ -102,9 +115,9 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -118,43 +131,51 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "The Intention Behind the Design",
             "heading_size": "h1"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Every Manifest Movement sock starts with a single affirmation — chosen, tested, and refined with real women. Woven into the fabric using jacquard technique, each intention is designed to be seen mid-stride, at the barre, or on the mat. This isn't decoration. It's a daily declaration.</p>",
             "text_style": "body"
+          }
+        },
+        "image-with-text-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Story",
+            "button_link": ""
           }
         }
       },
       "block_order": [
         "image-with-text-0",
-        "image-with-text-1"
+        "image-with-text-1",
+        "image-with-text-2"
       ],
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
+        "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-2",
         "mobile_content_alignment": "left",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
+    "trust-badges": {
       "type": "multicolumn",
       "blocks": {
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Free Shipping $60+",
+            "text": "<p>Standard delivery in 3–5 business days. Express available at checkout.</p>",
             "link_label": "",
             "link": ""
           }
@@ -162,8 +183,17 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "30-Day Returns",
+            "text": "<p>Not the right fit? Free size exchanges and hassle-free returns within 30 days.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Sustainably Made",
+            "text": "<p>Ethically manufactured with biodegradable packaging. 1% of every sale supports women's sports access.</p>",
             "link_label": "",
             "link": ""
           }
@@ -171,37 +201,38 @@
       },
       "block_order": [
         "column-0",
-        "column-1"
+        "column-1",
+        "column-2"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
-        "padding_top": 36,
+        "swipe_on_mobile": false,
+        "padding_top": 28,
         "padding_bottom": 36
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "You May Also Manifest",
         "heading_size": "h2",
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
+        "show_rating": true,
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -210,7 +241,7 @@
   "order": [
     "main",
     "image-with-text",
-    "multicolumn",
+    "trust-badges",
     "related-products"
   ]
 }
