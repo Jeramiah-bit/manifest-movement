@@ -15,14 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Every Step Is an Intention",
+            "heading": "Every Step Is a Declaration",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Performance socks with affirmations for women who move with purpose.",
+            "text": "Affirmation socks designed for women who train their body and their mindset. Grip soles. Bold intentions. Made to be seen mid-stride.",
             "text_style": "subtitle"
           }
         },
@@ -32,7 +32,7 @@
             "button_label_1": "Shop the Collection",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
-            "button_label_2": "What is Manifest Movement? →",
+            "button_label_2": "Our Story →",
             "button_link_2": "",
             "button_style_secondary_2": true
           }
@@ -90,7 +90,7 @@
         "collection-4"
       ],
       "settings": {
-        "title": "Shop by Category",
+        "title": "Shop by Intention",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -105,7 +105,7 @@
     "new_arrivals": {
       "type": "featured-collection",
       "settings": {
-        "title": "New Arrivals",
+        "title": "Just Dropped",
         "heading_size": "h2",
         "collection": "all",
         "products_to_show": 4,
@@ -152,7 +152,7 @@
         "collection-1"
       ],
       "settings": {
-        "heading": "Move With Intention",
+        "heading": "Worn With Purpose",
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
@@ -167,14 +167,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "✦ You are already everything you are becoming ✦",
+            "heading": "✦ She didn't just move her body — she moved her whole life forward ✦",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Every pair carries a whispered intention — a reminder that your movement is your meditation.<\/p>"
+            "text": "<p>Every pair carries a whispered intention. A reminder that your workout is your ritual, and every rep is a declaration of who you're becoming.<\/p>"
           }
         }
       },
@@ -204,7 +204,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Grip socks designed for yoga, pilates, and barre — with intentions woven into every step.",
+            "text": "12 intentions. Jacquard-woven into every pair. Built for yoga, Pilates, barre, running — and the woman who refuses to move without meaning.",
             "text_style": "subtitle"
           }
         },
@@ -240,7 +240,7 @@
     "bestsellers": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bestsellers",
+        "title": "Most Manifested",
         "heading_size": "h2",
         "collection": "all",
         "products_to_show": 8,
@@ -264,8 +264,8 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Intention in Every Stitch",
-            "text": "<p>Each pair is designed with affirmations woven into the fabric — a quiet reminder to move with purpose.<\/p>",
+            "title": "Intentions You Can Wear",
+            "text": "<p>Each pair features an affirmation jacquard-woven into the fabric — visible mid-stride, at the barre, on the mat. Not hidden. Not subtle. Made to be seen.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -273,8 +273,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Performance Meets Spirit",
-            "text": "<p>Non-slip grip soles, arch support, and breathable materials built for yoga, pilates, barre, and beyond.<\/p>",
+            "title": "Built to Perform",
+            "text": "<p>Non-slip grip soles, compression arch support, and seamless toe closure. Engineered for every kind of movement — from sunrise runs to hot yoga.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -282,8 +282,8 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "For Women Who Move",
-            "text": "<p>Manifest Movement is a community of women who believe that every step, stretch, and breath is sacred.<\/p>",
+            "title": "A Community, Not Just a Brand",
+            "text": "<p>Manifest Movement is a sisterhood of women who believe every step is sacred. 1% of every sale supports women's sports access programmes.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -295,7 +295,7 @@
         "column3"
       ],
       "settings": {
-        "title": "Why Manifest Movement",
+        "title": "Why Women Choose Us",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
